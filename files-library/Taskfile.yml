@@ -1,0 +1,15 @@
+---
+version: "3"
+
+output: prefixed
+
+vars:
+  REPOSITORY_SUBTYPE: library
+  REPOSITORY_TYPE: python
+
+includes:
+  common: ./.common/taskfiles-role/Taskfile-common.yml
+  python: ./.common/taskfiles-role/Taskfile-python.yml
+  fix: ./.common/taskfiles-role/Taskfile-fix.yml
+  lint: ./.common/taskfiles-role/Taskfile-lint.yml
+  software: ./.common/taskfiles-role/Taskfile-{{OS}}.yml
