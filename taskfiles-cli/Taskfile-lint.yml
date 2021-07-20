@@ -4,7 +4,7 @@ version: '3'
 tasks:
   all:
     desc: Lint the project by running all the linters in parallel
-    deps: [formatting]
+    deps: [formatting, python]
 
   formatting:
     deps:
@@ -26,6 +26,32 @@ tasks:
       - npm run lint:prettier
     sources:
       - '**/*.(css|html|js|json|less|md|mjml|php|scss|sh|ts|xml|yml)'
+
+  python:
+    deps:
+      - :common:python-requirements
+    desc: Lint Python files using Flake8
+    summary: |
+      $ Lint Python files using Flake8
+
+      Flake8 is a Python library that lints Python projects (or projects that may include Python files).
+      It is a combination of several Python linters like PyFlakes and pycodestyle. This task will run
+      `flake8` using the configuration found in the `.flake8` file in the root of this project.
+
+      The `.flake8` file is a common file shared across many of our repositories so if changes are made to
+      it then the changes need to be made to the appropriate common file repository here:
+      https://gitlab.com/megabyte-labs/common. Because of this, it might make more sense to add a comment
+      to lines that you wish to be ignored by flake8. For instance, you can ignore rule E234 by adding
+      a comment at the end of the line that looks like, "# noqa: E234".
+
+      NOTE: In order to maintain our strict quality standards, disabling Flake8 rules should only be done
+      when absolutely necessary.
+
+      For more information on Flake8, see: https://github.com/PyCQA/flake8
+    cmds:
+      - flake8 .
+    sources:
+      - '**/*.py'
 
   scripts:
     deps:
