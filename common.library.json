@@ -1,7 +1,7 @@
 {
   "github_prefix": "python-",
   "hbs": {
-    "python-library": true,
+    "python_library": true,
     "python": true
   },
   "header_description_post": ".",
