@@ -21,7 +21,7 @@
     "dockerfile": false,
     "playbook": false,
     "python": true,
-    "python-library": true,
+    "python_library": true,
     "yaml": false
   },
   "header_description_post": ".",
