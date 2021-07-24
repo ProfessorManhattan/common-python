@@ -7,7 +7,7 @@ tasks:
     deps:
       - formatting
       - python
-      - shellcheck
+      - scripts
 
   formatting:
     deps:
