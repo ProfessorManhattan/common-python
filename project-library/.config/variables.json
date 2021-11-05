@@ -1,1 +1,13 @@
-{}
+{
+  "docs": {
+    "header_description_pre": "A Python library from ",
+    "header_title_pre": "Python Library: ",
+    "link": "https://megabyte.space/docs/python/library"
+  },
+  "repository": {
+        "prefix": {
+            "github": "python-"
+        }
+    },
+    "subgroup": "library"
+}

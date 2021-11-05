@@ -1,1 +1,13 @@
-{}
+{
+  "docs": {
+    "header_description_pre": "A Python CLI created by ",
+    "header_title_pre": "Python CLI: ",
+    "link": "https://megabyte.space/docs/python/library"
+  },
+  "repository": {
+        "prefix": {
+            "github": "python-"
+        }
+    },
+    "subgroup": "cli"
+}
