@@ -5,9 +5,9 @@
     "link": "https://megabyte.space/docs/python/library"
   },
   "repository": {
-        "prefix": {
-            "github": "python-"
-        }
-    },
-    "subgroup": "library"
+    "prefix": {
+      "github": "python-"
+    }
+  },
+  "subgroup": "library"
 }
