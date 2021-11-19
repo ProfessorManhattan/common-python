@@ -22,7 +22,7 @@
     "help": "help@megabyte.space"
   },
   "github_prefix": "python-",
-  "group": "python",
+  "group": "common",
   "json_top_keys": "",
   "license": "MIT",
   "link": {
