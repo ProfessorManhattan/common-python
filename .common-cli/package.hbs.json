@@ -1,15 +1,17 @@
 {
   "author": "{{author.name}} <{{author.email}}> ({{link.home}})",
   "blueprint": {
-    "description": "An NPM package that is part of the Megabyte Labs eco-system",
-    "name": "My Project Name",
-    "overview": "This text shows up at the top of the README.md.",
+    "description": "Boilerplate for Python CLI projects",
+    "group": "python",
+    "name": "Python CLI Boilerplate",
+    "overview": "This repository is home to a Python CLI boilerplate. It is functional and feature-rich for advanced users. It is also simple, intuitive, and informative for Python beginners. It includes a lot of developer tools (powered by Task), useful CI configurations, and an awesome initial boilerplate codebase (special thanks to [Renny Montero](mailto:rennym19@gmail.com). This repository is kept up-to-date with the latest dependency updates and tools via GitLab CI (feel free to roam through `.config/`).",
     "repository": {
-      "github": "{{#if repository.github}}{{repository.github}}{{else}}https://github.com/{{profile.github}}/{{repository.prefix.github}}{{slug}}{{/if}}",
-      "gitlab": "{{#if repository.gitlab}}{{repository.gitlab}}{{else}}{{repository.gitlabBaseUrl}}/{{group}}/{{subgroup}}/{{slug}}{{/if}}"
+      "github": "https://github.com/ProfessorManhattan/boilerplate-python-cli",
+      "gitlab": "https://gitlab.com/megabyte-labs/templates/python-cli"
     },
-    "slug": "my-project",
-    "title": "Title of the README.md"
+    "slug": "python-cli",
+    "subgroup": "cli",
+    "title": "The Easy, Feature-Packed, Python CLI Starter Template"
   },
   "bugs": {
     "email": "{{email.help}}",
@@ -26,7 +28,7 @@
   "description": "{{description}}",
   "devDependencies": {
     "@commitlint/config-conventional": "^13.1.0",
-    "@mblabs/eslint-config": "^1.0.0",
+    "@mblabs/eslint-config": "^1.0.97",
     "@mblabs/prettier-config": "^14.14.14",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -49,7 +51,22 @@
     }
   ],
   "homepage": "{{link.home}}",
-  "keywords": ["megabytelabs", "npm", "package", "professormanhattan"],
+  "keywords": [
+    "advanced",
+    "bandit",
+    "beginner",
+    "boilerplate",
+    "cli",
+    "easy",
+    "gitlab-ci",
+    "megabytelabs",
+    "npm",
+    "package",
+    "poetry",
+    "professormanhattan",
+    "pytest",
+    "python"
+  ],
   "license": "{{license}}",
   "lint-staged": {
     "**/*": [
