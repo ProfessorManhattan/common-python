@@ -5,7 +5,7 @@
     "name": "Python CLI Boilerplate",
     "overview": "This repository is home to a Python CLI boilerplate. It is functional and feature-rich for advanced users. It is also simple, intuitive, and informative for Python beginners. It includes a lot of developer tools (powered by Task), useful CI configurations, and an awesome initial boilerplate codebase (special thanks to [Renny Montero](mailto:rennym19@gmail.com). This repository is kept up-to-date with the latest dependency updates and tools via GitLab CI (feel free to roam through `.config/`).",
     "repository": {
-      "github": "https://github.com/ProfessorManhattan/boilerplate-python-cli",
+      "github": "https://github.com/ProfessorManhattan/template-python-cli",
       "gitlab": "https://gitlab.com/megabyte-labs/templates/python-cli"
     },
     "slug": "python-cli",
