@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://megabyte.space"
 documentation = "https://megabyte.space/docs/common/python"
-keywords = ["boilerplate", "cli", "common", "files", "library", "megabytelabs", "npm", "package", "professormanhattan", "python", "shared"]
+keywords = ["boilerplate", "cli", "common", "files", "library", "mblabs", "megabytelabs", "npm", "package", "professormanhattan", "python", "shared"]
 include = ["CHANGELOG.md", "LICENSE"]
 classifiers = [
   "Development Status :: 4 - Beta",
