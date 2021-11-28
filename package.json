@@ -1,21 +1,24 @@
 {
+  "private": true,
+  "name": "@mblabs/common-python",
+  "version": "0.0.1",
+  "description": "Common files and boilerplates for Python projects",
+  "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
-  "blueprint": {
-    "description": "Common files and boilerplates for Python projects",
-    "group": "common",
-    "name": "Python Common",
-    "overview": "This repository hosts common files and boilerplate files for Python projects. The common files are stored in this repository and synchronized with downstream Python projects to keep shared files used in Python projects up-to-date. This repository also hosts boilerplate code that is injected into a Python project if it appears to be a new one.",
-    "repository": {
-      "github": "https://github.com/ProfessorManhattan/common-python",
-      "gitlab": "https://gitlab.com/megabyte-labs/common/python"
-    },
-    "slug": "common-python",
-    "subgroup": "python",
-    "title": "Python Common Files and Boilerplates"
+  "homepage": "https://megabyte.space",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfessorManhattan/common-python.git"
   },
   "bugs": {
     "email": "help@megabyte.space",
     "url": "https://gitlab.com/megabyte-labs/common/python/-/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "help": "task --list",
+    "prepare": "task common:husky",
+    "start": "bash .config/start.sh"
   },
   "config": {
     "commitizen": {
@@ -25,10 +28,15 @@
   "dependencies": {
     "tslib": "^2.3.1"
   },
-  "description": "Common files and boilerplates for Python projects",
+  "optionalDependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.0",
+    "signale": "^1.4.0",
+    "string-break": "^1.2.0"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^13.1.0",
-    "@mblabs/eslint-config": "^1.0.101",
+    "@mblabs/eslint-config": "^1.0.97",
     "@mblabs/prettier-config": "^14.14.14",
     "@mblabs/release-config": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
@@ -36,23 +44,6 @@
     "handlebars-helpers": "^0.10.0",
     "semantic-release": "^18.0.0"
   },
-  "engines": {
-    "node": ">=14.18.0"
-  },
-  "eslintConfig": {
-    "extends": "@mblabs/eslint-config"
-  },
-  "funding": [
-    {
-      "type": "opencollective",
-      "url": "https://opencollective.com/megabytelabs"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/ProfessorManhattan"
-    }
-  ],
-  "homepage": "https://megabyte.space",
   "keywords": [
     "boilerplate",
     "cli",
@@ -67,7 +58,38 @@
     "python",
     "shared"
   ],
-  "license": "MIT",
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "blueprint": {
+    "description": "Common files and boilerplates for Python projects",
+    "group": "common",
+    "name": "Python Common",
+    "overview": "This repository hosts common files and boilerplate files for Python projects. The common files are stored in this repository and synchronized with downstream Python projects to keep shared files used in Python projects up-to-date. This repository also hosts boilerplate code that is injected into a Python project if it appears to be a new one.",
+    "repository": {
+      "github": "https://github.com/ProfessorManhattan/common-python",
+      "gitlab": "https://gitlab.com/megabyte-labs/common/python"
+    },
+    "slug": "common-python",
+    "subgroup": "python",
+    "title": "Python Common Files and Boilerplates"
+  },
+  "eslintConfig": {
+    "extends": "@mblabs/eslint-config"
+  },
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/megabytelabs"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/ProfessorManhattan"
+    }
+  ],
   "lint-staged": {
     "**/*": [
       "blocklint --wordlist blacklist,slave,whitelist",
@@ -109,34 +131,12 @@
       "task image:compress --"
     ]
   },
-  "name": "@mblabs/common-python",
-  "optionalDependencies": {
-    "chalk": "^4.1.2",
-    "inquirer": "^8.2.0",
-    "signale": "^1.4.0",
-    "string-break": "^1.2.0"
-  },
   "prettier": "@mblabs/prettier-config",
-  "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
   "release": {
     "branches": [
       "master",
       "next"
     ],
     "extends": "@mblabs/release-config"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ProfessorManhattan/common-python.git"
-  },
-  "scripts": {
-    "help": "task --list",
-    "prepare": "task common:husky",
-    "start": "bash .config/start.sh"
-  },
-  "type": "module",
-  "version": "0.0.1"
+  }
 }
