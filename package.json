@@ -1,6 +1,6 @@
 {
-  "private": true,
-  "name": "@mblabs/common-python",
+  "private": false,
+  "name": "@installdoc/common-python",
   "version": "0.0.1",
   "description": "Common files and boilerplates for Python projects",
   "license": "MIT",
@@ -23,7 +23,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-emoji"
+      "path": "node_modules/cz-emoji-conventional"
     }
   },
   "dependencies": {},
@@ -47,7 +47,8 @@
     "package",
     "professormanhattan",
     "python",
-    "shared"
+    "shared",
+    "washingtondc"
   ],
   "engines": {
     "node": ">=14.18.0"
@@ -62,19 +63,28 @@
     "group": "common",
     "name": "Python Common",
     "overview": "This repository hosts common files and boilerplate files for Python projects. The common files are stored in this repository and synchronized with downstream Python projects to keep shared files used in Python projects up-to-date. This repository also hosts boilerplate code that is injected into a Python project if it appears to be a new one.",
+    "profile": {
+      "npmjs_organization": "installdoc"
+    },
     "repository": {
       "github": "https://github.com/ProfessorManhattan/common-python",
       "gitlab": "https://gitlab.com/megabyte-labs/common/python"
     },
-    "profile": {
-      "npmjs_organization": "installdoc"
-    },
     "slug": "common-python",
     "subgroup": "python",
-    "title": "Python Common Files and Boilerplates"
+    "title": "Python Common Files and Boilerplates",
+    "github_id": "R_kgDOGet00g",
+    "gitlab_project_id": "25919107",
+    "gitlab_group_id": "11097242"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "helpUrl": "https://megabyte.space/docs/contributing/commits"
   },
   "eslintConfig": {
-    "extends": "@mblabs/eslint-config",
+    "extends": "eslint-config-strict-mode",
     "rules": {
       "import/no-extraneous-dependencies": "off"
     }
@@ -111,7 +121,6 @@
       "task fix:json --"
     ],
     "**/*.sh": [
-      "task fix:shell --",
       "task lint:shell --"
     ],
     "**/*.toml": [
@@ -130,12 +139,12 @@
       "task image:compress --"
     ]
   },
-  "prettier": "@mblabs/prettier-config",
+  "prettier": "@washingtondc/prettier",
   "release": {
     "branches": [
       "master",
       "next"
     ],
-    "extends": "@mblabs/release-config"
+    "extends": "@washingtondc/release"
   }
 }
