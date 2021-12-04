@@ -77,6 +77,9 @@
       "github": "https://github.com/ProfessorManhattan/common-python",
       "gitlab": "https://gitlab.com/megabyte-labs/common/python"
     },
+    "profile": {
+      "npmjs_organization": "installdoc"
+    },
     "slug": "common-python",
     "subgroup": "python",
     "title": "Python Common Files and Boilerplates"
