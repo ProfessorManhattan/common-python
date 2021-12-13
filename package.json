@@ -61,7 +61,7 @@
     "emoji_end": " 🐍📄✔️",
     "emoji_start": "",
     "group": "common",
-    "name": "Python Common",
+    "name": "Python Common Files",
     "overview": "This repository hosts common files and boilerplate files for Python projects. The common files are stored in this repository and synchronized with downstream Python projects to keep shared files used in Python projects up-to-date. This repository also hosts boilerplate code that is injected into a Python project if it appears to be a new one.",
     "profile": {
       "npmjs_organization": "installdoc"
