@@ -60,6 +60,9 @@
     "description": "Common files and boilerplates for Python projects",
     "emoji_end": " 🐍📄✔️",
     "emoji_start": "",
+    "github_id": "R_kgDOGet00g",
+    "gitlab_group_id": "11097242",
+    "gitlab_project_id": "25919107",
     "group": "common",
     "name": "Python Common",
     "overview": "This repository hosts common files and boilerplate files for Python projects. The common files are stored in this repository and synchronized with downstream Python projects to keep shared files used in Python projects up-to-date. This repository also hosts boilerplate code that is injected into a Python project if it appears to be a new one.",
@@ -72,10 +75,7 @@
     },
     "slug": "common-python",
     "subgroup": "python",
-    "title": "Python Common Files and Boilerplates",
-    "github_id": "R_kgDOGet00g",
-    "gitlab_project_id": "25919107",
-    "gitlab_group_id": "11097242"
+    "title": "Python Common Files and Boilerplates"
   },
   "commitlint": {
     "extends": [
@@ -101,11 +101,7 @@
   ],
   "lint-staged": {
     "**/*": [
-      "blocklint --wordlist blacklist,slave,whitelist",
-      "check-merge-conflict",
-      "check-added-large-files",
-      "check-symlinks",
-      "destroyed-symlinks"
+      "task lint:any --"
     ],
     "**/*.(css|html|less|md|mjml|php|scss|sh|xml)": [
       "task fix:prettier --"
@@ -138,6 +134,14 @@
       "task image:resize -- 200 200",
       "task image:compress --"
     ]
+  },
+  "ntl": {
+    "descriptions": {
+      "help": "Display a list of tasks that can be run via the Taskfile.yml",
+      "prepare": "Hook, triggered by running npm install, that runs logic such as installing pre-commit hooks",
+      "repair": "Fixes basic issues in projects that are having trouble running basic commands like 'task start'",
+      "start": "Entrypoint for new developers that installs requirements and then runs 'task start'"
+    }
   },
   "prettier": "@washingtondc/prettier",
   "release": {
