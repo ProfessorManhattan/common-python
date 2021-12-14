@@ -62,6 +62,26 @@
     ""
   ],
   "github_prefix": "python-",
+  "gitlab_pipelines": [
+    {
+      "active": true,
+      "cron": "0 12 * * 1",
+      "description": "Weekly Test",
+      "ref": "master",
+      "variable": {
+        "WEEKLY_TEST": true
+      }
+    },
+    {
+      "active": true,
+      "cron": "0 5 1 * *",
+      "description": "Monthly Repository Update",
+      "ref": "synchronize",
+      "variable": {
+        "REPOSITORY_UPDATE": true
+      }
+    }
+  ],
   "group": "python",
   "json_top_keys": "",
   "license": "MIT",
