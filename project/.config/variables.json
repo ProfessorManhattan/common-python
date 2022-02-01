@@ -19,5 +19,7 @@
       }
     }
   ],
-  "group": "python"
+  "group": "python",
+  "scriptsBuild": "task python:build",
+  "scriptsTest": "task python:test:pytest"
 }
