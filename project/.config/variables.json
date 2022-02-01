@@ -21,5 +21,5 @@
   ],
   "group": "python",
   "scriptsBuild": "task python:build",
-  "scriptsTest": "task python:test:pytest"
+  "scriptsTest": "[[ -z $CI ]] && task python:test:pytest || task python:test:ci"
 }
