@@ -61,6 +61,7 @@
     "access": "public"
   },
   "blueprint": {
+    "customPyPiPackageName": "",
     "description": "Common files and boilerplates for Python projects",
     "emoji_end": " 🐍📄✔️",
     "emoji_start": "",
