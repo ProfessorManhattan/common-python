@@ -1,1 +1,5 @@
-{{{poet (if customPyPiPackageName customPyPiPackageName (append repository.prefix.github slug))}}}
+{{#if customPyPiPackageName}}
+{{{poet customPyPiPackageName}}}
+{{else}}
+{{{poet (append repository.prefix.github slug)}}}
+{{/if}}
