@@ -1,7 +1,7 @@
 class {{#if binName}}{{pascalcase binName}}{{else}}{{pascalcase slug}}{{/if}} < Formula
   desc "{{description}}"
   homepage "{{link.home}}"
-  url "{{#if repository.github}}{{repository.github}}{{else}}https://github.com/{{profile.github}}/{{repository.prefix.github}}{{slug}}{{/if}}/releases/download/v{{version}}/{{#if binName}}{{binName}}{{else}}{{slug}}{{/if}}.tar.gz"
+  url "{{#if repository.github}}{{repository.github}}{{else}}https://github.com/{{profile.github}}/{{slug}}{{/if}}/releases/download/v{{version}}/{{#if binName}}{{binName}}{{else}}{{slug}}{{/if}}.tar.gz"
   version "{{version}}"
   license "{{license}}"
 
@@ -10,7 +10,7 @@ class {{#if binName}}{{pascalcase binName}}{{else}}{{pascalcase slug}}{{/if}} < 
   def install
     os = OS.kernel_name.downcase
     arch = Hardware::CPU.intel? ? "amd64" : Hardware::CPU.arch.to_s
-    bin.install "build/bin/{{#if binName}}{{binName}}{{else}}{{slug}}{{/if}}-#{os}_#{arch}" => "{{#if binName}}{{binName}}{{else}}{{slug}}{{/if}}"
+    bin.install "build/{{#if binName}}{{binName}}{{else}}{{slug}}{{/if}}-#{os}_#{arch}" => "{{#if binName}}{{binName}}{{else}}{{slug}}{{/if}}"
   done
 
   test do
