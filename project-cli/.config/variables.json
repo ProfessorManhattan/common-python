@@ -1,4 +1,5 @@
 {
+  "dockerPublish": true,
   "docs": {
     "header_description_pre": "A Python CLI created by ",
     "header_title_pre": "Python CLI: ",
