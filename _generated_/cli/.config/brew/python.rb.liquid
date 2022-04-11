@@ -1,7 +1,7 @@
 {{#if customPyPiPackageName}}
-# @pythonBrew [{{customPyPiPackageName}}) - {{description}}
+# @pythonBrew [{{customPyPiPackageName}}]({{repository.github}}) - {{description}}
 {{{poet customPyPiPackageName}}}
 {{else}}
-# @pythonBrew [{{(append repository.prefix.github slug)}}) - {{description}}
+# @pythonBrew [{{append repository.prefix.github slug}}]({{repository.github}}) - {{description}}
 {{{poet (append repository.prefix.github slug)}}}
 {{/if}}
